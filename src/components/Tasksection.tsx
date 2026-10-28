@@ -85,7 +85,7 @@ const Tasksection = ({
         {/* Available Technologies */}
         <section className="min-w-0 lg:col-span-3">
          
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 xl:grid-cols-3">
             {task.map((item) => {
               const isAdded = inprogressTask.some(
                 (t) => t.id === item.id
