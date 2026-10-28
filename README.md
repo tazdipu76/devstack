@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="DevStack Application Screenshot" width="100%">
+  <img src="/src/assets/screenshot.png" alt="DevStack Application Screenshot" width="100%">
 </p>
 
 ---
