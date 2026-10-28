@@ -6,7 +6,7 @@ const Banner = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center  p-6 text-center lg:text-left">
 
             {/* Left side */}
-            <div className="flex flex-col items-center lg:items-start">
+            <div className="lg:ml-6 flex flex-col items-center lg:items-start">
                 <h1 className="text-3xl md:text-4xl font-bold leading-tight">
                     Build Your Ideal <br />
                     <span className="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
