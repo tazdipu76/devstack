@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Navber from "./components/Navber";
 import Mainsection from "./components/Mainsection";
 import type { TaskType } from "./components/Mainsection";
+import Footer from "./components/Footer";
 
 const taskpromise: Promise<TaskType[]> = fetch("/data.json").then(
   (res) => {
@@ -28,6 +29,8 @@ function App() {
       >
         <Mainsection taskpromise={taskpromise} />
       </Suspense>
+
+      <Footer/>
     </>
   );
 }
