@@ -1,9 +1,10 @@
 
 import { Suspense } from "react";
-import Navber from "./components/Navber";
+import Navbar from "./components/Navbar";
 import Mainsection from "./components/Mainsection";
 import type { TaskType } from "./components/Mainsection";
 import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
 
 const taskpromise: Promise<TaskType[]> = fetch("/data.json").then(
   (res) => {
@@ -18,7 +19,7 @@ const taskpromise: Promise<TaskType[]> = fetch("/data.json").then(
 function App() {
   return (
     <>
-      <Navber />
+      <Navbar />
 
       <Suspense
         fallback={
@@ -31,6 +32,7 @@ function App() {
       </Suspense>
 
       <Footer/>
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   );
 }
