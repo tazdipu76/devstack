@@ -4,7 +4,7 @@ import bannerStack from "../assets/banner-stack.png";
 
 const Banner = () => {
     return (
-        <div className="border border-amber-200 flex justify-between items-center p-6">
+        <div className=" flex justify-between items-center p-6">
 
             {/* Left side */}
             <div>
